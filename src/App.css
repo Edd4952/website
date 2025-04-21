@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -24,6 +27,24 @@
   color: white;
 }
 
+.top-header {
+  text-align: left; /* Align text to the left */
+  padding-left: 20px; /* Add space between the text and the left border */
+  background-color: #2467ee; /* Keep the background color */
+  display: flex;
+  height: 100px; /* Set a fixed height for the header */
+  flex-direction: column;
+  align-items: left; /* Align items to the left */
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+.antibold {
+  font-weight: 300; /* Make the text bold */
+}
 .App-link {
   color: #61dafb;
 }
