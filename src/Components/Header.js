@@ -5,11 +5,23 @@ import "../App.css";
 function Header() {
     return (
         <header className="top-header">
-            <h1>
+            
+
               <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                <h1>Edward<span className="antibold">Zilbert</span></h1>
+                <span className="bold">Edward </span>Zilbert
               </Link>
-            </h1>
+
+              
+              <nav className="navwrap">
+               
+                <Link to="/skills" className="nav_link">Skills</Link>
+                <Link to="/projects" className="nav_link">Projects</Link>
+                <Link to="/contact" className="nav_link">Contact</Link>
+                        
+              </nav>
+
+              
+            
             
         </header>
     );
