@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import "../Assets/github.png";
 import "../Assets/linkedin.png";
-import "../Assets/resume.pdf";
 
 function Header() {
     return (

@@ -5,17 +5,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -44,27 +33,30 @@
 }
 .socials {
   display: flex;
-  justify-content: right; /* Space between items */
-  align-items: center; /* Center items vertically */
+  align-items: center;
+  justify-content: flex-end; /* Space between items */
   width: 100%; /* Full width of the header */
   padding-right: 10px; /* Space on the right side */
 }
 .social-icon{
-  text-decoration: none;
-  color: inherit; /* Inherit color from parent */
+  display: flex;
+  align-items: center;
   padding: 10px; /* Space around the icon */
   font-size: 30px; /* Icon size */
   width: 40px; /* Set the width of the icons */
   height: 40px; /* Set the height of the icons */
 }
+
+
+
 .social-icon:hover {
   transform: scale(1.1); /* Slightly enlarge the icon on hover */
   cursor: pointer; /* Change the cursor to a pointer */
-  background-color: #4084e4; /* Optional hover background */
+  background-color: #112542; /* Optional hover background */
   border-radius: 10px; /* Optional rounded corners */
 }
 .navwrap {
-  padding-left: 20px;
+  padding-left: 20px;;
 }
 .nav_link{
   color: #61dafb; 
@@ -74,7 +66,7 @@
   padding: 15px; /* Space around the text and icon */
 }
 .nav_link:hover {
-  background-color: #4084e4; /* Optional hover background */
+  background-color: #112542; /* Optional hover background */
   border-radius: 10px; /* Optional rounded corners */
   font-weight: 400;
 }
