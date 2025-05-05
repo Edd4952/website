@@ -1,19 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import "../Assets/github.png";
 import "../Assets/linkedin.png";
 
 function Header() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    
+    const scrollToSection = (id) => {
+      const section = document.getElementById(id);
+      if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+      }
+  };
+
     return (
-        <header className="top-header">
-            
+        <header className={`top-header ${isVisible ? "visible" : "hidden"}`}>
 
               <Link to="/" style={{ textDecoration: 'none', color: 'inherit' , display: 'flex', flexDirection: 'row'}}>
                 <span className="bold">Edward </span>Zilbert
               </Link>
 
-              
               <nav className="navwrap">
                
                 <Link to="/skills" className="nav_link">Skills</Link>
@@ -21,6 +44,7 @@ function Header() {
                 <Link to="/contact" className="nav_link">Contact</Link>
                         
               </nav>
+
               <div className="socials">
                 <a href="https://www.linkedin.com/in/edward-zilbert-251040216/" target="_blank" rel="noopener noreferrer">
                   <img src={require("../Assets/linkedin.png")} alt="LinkedIn" className="social-icon" />
@@ -32,10 +56,6 @@ function Header() {
                   <img src={require("../Assets/resumeicon.png")} alt="Resume" className="social-icon" />
                 </a>
               </div>
-
-              
-            
-            
         </header>
     );
 }
