@@ -1,26 +1,22 @@
 import React from "react";
 import '../App.css';
 import { Link } from 'react-router-dom'
-import Header from "../Components/Header.js";
+import Header from "../Components/1_Header.js";
+import Intro from "../Components/2_Intro.js";
+import Skills from "../Components/3_Skills.js";
+import Projects from "../Components/4_Projects.js";
+import Contact from "../Components/5_Contact.js";
 
 function Home(){
   return (
     <div>
-      
       <Header/>
-
-
-
-      <header className="App-header">
-        <h1> Hi, I'm </h1>
-        <h2> Edward Z</h2>
-        <Link to="/movies">Resume</Link>
-        <a href="https://github.com/Edd4952" target="_blank" rel="noopener noreferrer">
-        Visit My Github
-        </a>
-      </header>
+      <Intro/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </div>
   );
-};
+}
 
 export default Home;
