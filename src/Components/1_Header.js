@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import "../Styles/Header.css";
 import "../Assets/github.png";
 import "../Assets/linkedin.png";
 
@@ -38,11 +38,9 @@ function Header() {
               </Link>
 
               <nav className="navwrap">
-               
-                <Link to="/skills" className="nav_link">Skills</Link>
-                <Link to="/projects" className="nav_link">Projects</Link>
-                <Link to="/contact" className="nav_link">Contact</Link>
-                        
+                <button className="nav_link" onClick={() => scrollToSection("Skills")}>Skills</button>
+                <button className="nav_link" onClick={() => scrollToSection("projects-section")}>Projects</button>
+                <button className="nav_link" onClick={() => scrollToSection("contact-section")}>Contact</button>
               </nav>
 
               <div className="socials">

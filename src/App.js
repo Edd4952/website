@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import './App.css';
+
 
 /* Can add more pages later like <Route path="/shop" element={<Business />} /> */
 

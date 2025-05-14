@@ -1,0 +1,32 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.skill-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skill-header {
+    background-color: #408bf5;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.skill-header:hover {
+    background-color: #306bb5;
+}
+
+.skill-content {
+    background-color: #f9f9f9;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
