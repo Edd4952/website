@@ -1,6 +1,7 @@
 .skills-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
     margin: 20px;
@@ -9,6 +10,7 @@
 .skill-box {
     display: flex;
     flex-direction: column;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;

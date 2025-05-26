@@ -5,8 +5,11 @@ import "../Styles/4_Projects.css";
 
 function Projects() {
     return (
-        <div className="projects-container">
-            stuff
+        <div>
+            <h1 style={{ padding: "10px" , borderTop: "2px solid #ccc" }}>My Projects</h1>
+            <div className="projects-container">
+                stuff
+            </div>
         </div>
     );
 }
