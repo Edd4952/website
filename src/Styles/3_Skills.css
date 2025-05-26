@@ -1,23 +1,27 @@
 .skills-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     gap: 10px;
     margin: 20px;
 }
 
 .skill-box {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
-    transition: all 0.3s ease;
+    flex: 1;
 }
 
 .skill-header {
     background-color: #408bf5;
     color: white;
-    padding: 10px;
+    padding: 5px;
     font-size: 18px;
+    
 }
 
 .skill-header:hover {

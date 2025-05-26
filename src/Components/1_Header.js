@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../Styles/Header.css";
+import "../Styles/1_Header.css";
 import "../Assets/github.png";
 import "../Assets/linkedin.png";
 
