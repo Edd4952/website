@@ -32,13 +32,12 @@ function Header() {
 
     return (
         <header className={`top-header ${isVisible ? "visible" : "hidden"}`}>
-
               <Link to="/" style={{ textDecoration: 'none', color: 'inherit' , display: 'flex', flexDirection: 'row'}}>
                 <span className="bold">Edward </span>Zilbert
               </Link>
 
               <nav className="navwrap">
-                <button className="nav_link" onClick={() => scrollToSection("Skills")}>Skills</button>
+                <button className="nav_link" onClick={() => scrollToSection("3_Skills")}>Skills</button>
                 <button className="nav_link" onClick={() => scrollToSection("projects-section")}>Projects</button>
                 <button className="nav_link" onClick={() => scrollToSection("contact-section")}>Contact</button>
               </nav>

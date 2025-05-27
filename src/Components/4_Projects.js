@@ -6,9 +6,12 @@ import "../Styles/4_Projects.css";
 function Projects() {
     return (
         <div>
-            <h1 style={{ padding: "10px" , borderTop: "2px solid #ccc" }}>My Projects</h1>
+            <h1 style={{ padding: "20px" , paddingLeft: "20px", borderTop: "2px solid #ccc" }}>My Projects</h1>
             <div className="projects-container">
-                stuff
+                <div className="project-box">
+                    <h3>Project Title</h3>
+                    <p>Project description goes here.</p>
+                </div>
             </div>
         </div>
     );

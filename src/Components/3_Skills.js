@@ -25,11 +25,12 @@ function Skills() {
 
     return (
         <div>
-            <h1 style={{ padding: "10px"}}>My Skills</h1>
+            <section id="3_Skills"></section>
+            <h1 style={{ paddingLeft: "20px", paddingTop: "90px" }}>My Skills</h1>
             <div className="skills-container">
                 {skills.map((skill) => (
                     <div key={skill.id} className="skill-box">
-                        <div className="skill-header" onClick={() => toggleExpand(skill.id)}>
+                        <div className="skill-header" onMouseEnter={() => toggleExpand(skill.id)}>
                             <h3>{skill.title}</h3>
                         </div>
                         {expanded.includes(skill.id) && (

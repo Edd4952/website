@@ -6,3 +6,10 @@
     margin: 20px;   
     min-height: 150vh;
 }
+.project-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 20px;   
+}
