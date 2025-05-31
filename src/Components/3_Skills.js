@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/App.css";
 import "../Styles/3_Skills.css"; // Import your CSS file for styling
+//images
+import cpp from "../Assets/c-logo-a2fa.png";
+import python from "../Assets/python-1d15.png";
+import js from "../Assets/javascript.jpg";
+import java from "../Assets/java-logo-trasparent-bf11.png";
+import css from "../Assets/css.png";
+
 
 function Skills() {
     const [expanded, setExpanded] = useState([]);
@@ -10,9 +17,9 @@ function Skills() {
     const box3 = "CSS is used to style and layout web pages.";
 
     const skills = [
-        { id: 1, title: "JavaScript", description: box1 },
-        { id: 2, title: "React", description: box2 },
-        { id: 3, title: "CSS", description: box3 },
+        { id: 1, title: "JavaScript", description: box1, image: js },
+        { id: 2, title: "React", description: box2, image: python },
+        { id: 3, title: "CSS", description: box3, image: css },
     ];
 
     const toggleExpand = (id) => {
@@ -35,6 +42,7 @@ function Skills() {
                         </div>
                         {expanded.includes(skill.id) && (
                             <div className="skill-content">
+                                <img src={skill.image} alt="Description" height={"20em"} width={"auto"} vertical-align={"middle"}/>
                                 <p>{skill.description}</p>
                             </div>
                         )}
