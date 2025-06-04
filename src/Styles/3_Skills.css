@@ -11,7 +11,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 0.84vw; /* doubled from 0.42vw */
+    gap: 0.42vw; /* doubled from 0.42vw */
     margin: 0.26vw; /* doubled from 0.26vw */
     width: 33.33%;
     border: #ccc 0.104vw solid; /* doubled from 0.052vw */

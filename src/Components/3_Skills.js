@@ -52,9 +52,9 @@ function Skills() {
                 {/* prog languages */}
                 <div className="skills-container">
                     {/*title for skill card*/}
-                    <h3>Programming Languages: </h3>
+                    <h3 style={{ color: "#85929e ", margin: "0"}}>Programming Languages: </h3>
                     {/*break into next line*/}
-                    <div style={{ flexBasis: "100%", height: "0" }}></div>
+                    <div style={{ flexBasis: "100%", height: "0"}}></div>
                     
                     {languages.map((language) => (
                         <div key={language.id} className="skill-box">
@@ -71,7 +71,7 @@ function Skills() {
                 {/* computer skills */}
                 <div className="skills-container">
                     {/*title for skill card*/}
-                    <h3>Computer Science Skills: </h3>
+                    <h3 style={{ color: "#85929e ", margin: "0"}}>Computer Science Skills: </h3>
                     {/*break into next line*/}
                     <div style={{ flexBasis: "100%", height: "0" }}></div>
                     {compsciSkills.map((skill) => (
@@ -79,7 +79,7 @@ function Skills() {
                             <div className="skill-header">
                                 <h3>{skill.title}</h3>
                                 <img src={skill.image} alt="Description" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
-                                <div className="skill-tooltip">
+                                <div className="skill-tooltip" style={{left: "50%", transform: "translateX(-50%)"}}>
                                     <p>{skill.description}</p>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ function Skills() {
                 {/* soft skills */}
                 <div className="skills-container">
                     {/*title for skill card*/}
-                    <h3>Soft Skills: </h3>
+                    <h3 style={{ color: "#85929e ", margin: "0"}}>Soft Skills: </h3>
                     {/*break into next line*/}
                     <div style={{ flexBasis: "100%", height: "0" }}></div>
 
@@ -98,7 +98,7 @@ function Skills() {
                             <div className="skill-header">
                                 <h3>{skill.title}</h3>
                                 <img src={skill.image} alt="Description" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
-                                <div className="skill-tooltip">
+                                <div className="skill-tooltip" style={{left: "100%", transform: "translateX(-100%)"}}>
                                     <p>{skill.description}</p>
                                 </div>
                             </div>
