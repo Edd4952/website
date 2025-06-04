@@ -1,42 +1,44 @@
 .skilltype-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* or space-between, flex-start, etc. */
-    align-items: center;           /* vertical alignment */
-    padding: 10px;
-    height : auto; /* Adjust height as needed */
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
 }
 
 .skills-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;    
-    gap: 8px;
-    margin: 10px;
+    justify-content: flex-start;
+    gap: 0.84vw; /* doubled from 0.42vw */
+    margin: 0.26vw; /* doubled from 0.26vw */
     width: 33.33%;
-    border: #ccc 1px solid;
-    border-radius: 5px;
-    padding: 8px;
+    border: #ccc 0.104vw solid; /* doubled from 0.052vw */
+    border-radius: 0.52vw; /* doubled from 0.26vw */
+    padding: 0.42vw; /* doubled from 0.42vw */
 }
 
 .skill-box {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: flex-start;
     cursor: pointer;
-    flex: 1;
 }
 
 .skill-header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: 0 0.52vw;
+    gap: 0.52vw; /* doubled from 0.26vw */
     background-color: #408bf5;
     color: white;
-    font-size: 18px;
+    height: 2vw; /* 50px ≈ 1.3vw */
+    font-size: 1vw; /* 18px ≈ 0.47vw */
     position: relative;
+    border-radius: .3vw;
 }
 
 .skill-header:hover {
@@ -49,25 +51,25 @@
 
 .skill-content {
     background-color: #f9f9f9;
-    padding: 0px;
-    font-size: 16px;
+    font-size: 0.42vw; /* 16px ≈ 0.42vw */
     color: #333;
+    justify-content: flex-start;
+    
 }
 
 .skill-tooltip {
     display: none;
     position: absolute;
     background: #fff;
+    text-align: center;
     color: #333;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border: 0.104vw solid #ccc; /* doubled from 0.052vw */
+    padding: 0.05vw 0.01vw; /* doubled from 0.42vw 0.62vw */
+    border-radius: 0.64vw; /* doubled from 0.32vw */
+    box-shadow: 0 0.208vw 0.84vw rgba(0,0,0,0.15); /* doubled from 0.104vw 0.42vw */
     z-index: 10;
-    top: 110%; /* below the header */
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 180px;
-    font-size: 14px;
+    top: 3vw; /* doubled from 5.72vw */
+    width: 300%;
+    font-size: 1.44vw; /* doubled from 0.72vw */
     white-space: normal;
 }

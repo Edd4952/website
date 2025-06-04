@@ -10,6 +10,7 @@ import java from "../Assets/java-logo-trasparent-bf11.png";
 import css from "../Assets/css.png";
 
 
+
 function Skills() {
     const [setExpanded] = useState([]);
     const box1 = "JavaScript is a versatile programming language used for web development, server-side scripting, and more.";
@@ -91,7 +92,7 @@ function Skills() {
                     <h3>Soft Skills: </h3>
                     {/*break into next line*/}
                     <div style={{ flexBasis: "100%", height: "0" }}></div>
-                    
+
                     {softSkills.map((skill) => (
                         <div key={skill.id} className="skill-box">
                             <div className="skill-header">
