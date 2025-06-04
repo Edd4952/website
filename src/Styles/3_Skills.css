@@ -22,7 +22,7 @@
 .skill-box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
     cursor: pointer;
 }
 
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding: 0 0.52vw;
     gap: 0.52vw; /* doubled from 0.26vw */
     background-color: #408bf5;

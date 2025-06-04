@@ -8,29 +8,35 @@ import python from "../Assets/python-1d15.png";
 import js from "../Assets/javascript.jpg";
 import java from "../Assets/java-logo-trasparent-bf11.png";
 import css from "../Assets/css.png";
+import react from "../Assets/react.png";
 
 
 
 function Skills() {
     const [setExpanded] = useState([]);
-    const box1 = "JavaScript is a versatile programming language used for web development, server-side scripting, and more.";
-    const box2 = "React is a JavaScript library for building user interfaces.";
-    const box3 = "CSS is used to style and layout web pages.";
+    const javasdesc = "JavaScript is a versatile programming language used for web development, server-side scripting, and more.";
+    const reactdesc = "React is a JavaScript library for building user interfaces.";
+    const cssdesc = "CSS is used to style and layout web pages.";
+    const cppdesc = "C++ is a powerful general-purpose programming language that supports object-oriented programming.";
 
     const languages = [
-        { id: 1, title: "Javascript", description: box1, image: js },
-        { id: 2, title: "React", description: box2, image: python },
-        { id: 3, title: "CSS", description: box3, image: css },
+        { id: 1, title: "Javascript", description: javasdesc, image: js },
+        { id: 2, title: "React", description: reactdesc, image: react },
+        { id: 3, title: "CSS", description: cssdesc, image: css },
+        { id: 4, title: "C++", description: cppdesc, image: cpp },
+        { id: 5, title: "Python", description: "Python is a high-level, interpreted programming language known for its readability.", image: python },
+        { id: 6, title: "Java", description: "Java is a widely-used object-oriented programming language.", image: java },
     ];
     const compsciSkills = [
-        { id: 1, title: "C++", description: "C++ is a powerful general-purpose programming language.", image: cpp },
-        { id: 2, title: "Python", description: "Python is a high-level, interpreted programming language known for its readability.", image: python },
-        { id: 3, title: "Java", description: "Java is a widely-used object-oriented programming language.", image: java },
+        { id: 1, title: "VSCode", description: "", image: js },
+        { id: 2, title: "IntelliJ Idea", description: javasdesc, image: js },
+        { id: 3, title: "Unity", description: javasdesc, image: js },
+        { id: 4, title: "GameMaker Studio", description: javasdesc, image: js },
     ];
     const softSkills = [
-        { id: 1, title: "Communication", description: "Effective communication skills are essential for collaboration and teamwork.", image: cpp },
-        { id: 2, title: "Problem Solving", description: "The ability to analyze problems and find effective solutions.", image: python },
-        { id: 3, title: "Time Management", description: "Managing time efficiently to meet deadlines and priorities.", image: java },
+        { id: 1, title: "Communication", description: "Effective communication skills are essential for collaboration and teamwork." },
+        { id: 2, title: "Problem Solving", description: "The ability to analyze problems and find effective solutions." },
+        { id: 3, title: "Time Management", description: "Managing time efficiently to meet deadlines and priorities." },
     ];
 
     /*const toggleExpand = (id) => {
@@ -60,8 +66,8 @@ function Skills() {
                         <div key={language.id} className="skill-box">
                             <div className="skill-header">
                                 <h3>{language.title}</h3>
-                                <img src={language.image} alt="Description" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
-                                <div className="skill-tooltip">
+                                <img src={language.image} alt="" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
+                                <div className="skill-tooltip" style={{left: "0%", transform: "translateX(0%)"}}>
                                     <p>{language.description}</p>
                                 </div>
                             </div>
@@ -78,7 +84,7 @@ function Skills() {
                         <div key={skill.id} className="skill-box">
                             <div className="skill-header">
                                 <h3>{skill.title}</h3>
-                                <img src={skill.image} alt="Description" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
+                                <img src={skill.image} alt="" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
                                 <div className="skill-tooltip" style={{left: "50%", transform: "translateX(-50%)"}}>
                                     <p>{skill.description}</p>
                                 </div>
@@ -97,7 +103,7 @@ function Skills() {
                         <div key={skill.id} className="skill-box">
                             <div className="skill-header">
                                 <h3>{skill.title}</h3>
-                                <img src={skill.image} alt="Description" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
+                                <img src={skill.image} alt="" height="20em" width="auto" style={{ verticalAlign: "middle" }} />
                                 <div className="skill-tooltip" style={{left: "100%", transform: "translateX(-100%)"}}>
                                     <p>{skill.description}</p>
                                 </div>
