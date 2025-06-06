@@ -9,6 +9,10 @@ import js from "../Assets/javascript.jpg";
 import java from "../Assets/java-logo-trasparent-bf11.png";
 import css from "../Assets/css.png";
 import react from "../Assets/react.png";
+import vsCode from "../Assets/vscode.png";
+import intelliJ from "../Assets/intellij.png";
+import unity from "../Assets/unity.png";
+import gameMaker from "../Assets/gamemaker.png";
 
 
 
@@ -28,10 +32,10 @@ function Skills() {
         { id: 6, title: "Java", description: "Java is a widely-used object-oriented programming language.", image: java },
     ];
     const compsciSkills = [
-        { id: 1, title: "VSCode", description: "", image: js },
-        { id: 2, title: "IntelliJ Idea", description: javasdesc, image: js },
-        { id: 3, title: "Unity", description: javasdesc, image: js },
-        { id: 4, title: "GameMaker Studio", description: javasdesc, image: js },
+        { id: 1, title: "VSCode", description: "", image: vsCode },
+        { id: 2, title: "IntelliJ Idea", description: javasdesc, image: intelliJ },
+        { id: 3, title: "Unity", description: javasdesc, image: unity },
+        { id: 4, title: "GameMaker Studio", description: javasdesc, image: gameMaker },
     ];
     const softSkills = [
         { id: 1, title: "Communication", description: "Effective communication skills are essential for collaboration and teamwork." },
