@@ -11,7 +11,8 @@ function Projects() {
     ];
     return (
         <div>
-            <h1 style={{ padding: "20px" , paddingLeft: "20px", borderTop: "2px solid #ccc" }}>My Projects</h1>
+            <section id="4_Projects"></section>
+            <h1 style={{ paddingLeft: "20px", paddingTop: "90px" }}>My Projects</h1>
             <div className="projects-container">{
                     projects.map(project => (
                     <div key={project.id} className="project-box">
