@@ -30,6 +30,7 @@ function Skills() {
         { id: 4, title: "C++", description: cppdesc, image: cpp },
         { id: 5, title: "Python", description: "Python is a high-level, interpreted programming language known for its readability.", image: python },
         { id: 6, title: "Java", description: "Java is a widely-used object-oriented programming language.", image: java },
+        { id: 7, title: "GML", description: "", image: gameMaker },
     ];
     const compsciSkills = [
         { id: 1, title: "VSCode", description: "", image: vsCode },
