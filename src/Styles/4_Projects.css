@@ -2,14 +2,48 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     gap: 10px;
-    margin: 20px;   
+    margin: 20px auto;   
     min-height: 150vh;
+    max-width: 1080px;
 }
 .project-box{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
-    margin: 20px;   
+    margin: 20px auto;
+    max-width: 1080px;
+    border: 0.104vw solid #ccc; /* doubled from 0.052vw */
+}
+.project-overview{
+    display: flex;
+    border : 0.104vw solid #ff6464; /* doubled from 0.052vw */
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1vw;
+    gap: 10px;
+    margin: 20px auto;   
+}
+.tool-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    border : 0.104vw solid #ff00bf; /* doubled from 0.052vw */
+}
+.tool{
+    display: flex;
+    flex-direction: row;
+    border : 0.104vw solid #00ff22; /* doubled from 0.052vw */
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.52vw;
+    gap: 1vw; 
+    background-color: #408bf5;
+    color: white;
+    height: 2vw; 
+    font-size: 1vw;
+    position: relative;
+    border-radius: .3vw;
 }
