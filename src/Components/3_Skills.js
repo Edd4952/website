@@ -4,6 +4,7 @@ import "../Styles/App.css";
 import "../Styles/3_Skills.css"; // Import your CSS file for styling
 //images
 import cpp from "../Assets/c-logo-a2fa.png";
+import csharp from "../Assets/csharp-icon.png";
 import python from "../Assets/python-1d15.png";
 import js from "../Assets/javascript.jpg";
 import java from "../Assets/java-logo-trasparent-bf11.png";
@@ -35,10 +36,11 @@ function Skills() {
         { id: 1, title: "Javascript", description: javasdesc, image: js },
         { id: 2, title: "React", description: reactdesc, image: react },
         { id: 3, title: "CSS", description: cssdesc, image: css },
-        { id: 4, title: "C++", description: cppdesc, image: cpp },        
-        { id: 5, title: "Python", description: pythonDesc, image: python },
-        { id: 6, title: "Java", description: javaDesc, image: java },
-        { id: 7, title: "GML", description: gmlDesc, image: gameMaker },
+        { id: 4, title: "C++", description: cppdesc, image: cpp },
+        { id: 5, title: "C#", description: csharpDesc, image: csharp },
+        { id: 6, title: "Python", description: pythonDesc, image: python },
+        { id: 7, title: "Java", description: javaDesc, image: java },
+        { id: 8, title: "GML", description: gmlDesc, image: gameMaker },
     ];
     const compsciSkills = [
         { id: 1, title: "VSCode", description: vscodeDesc, image: vsCode },
