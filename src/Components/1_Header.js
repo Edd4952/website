@@ -4,6 +4,7 @@ import "../Styles/1_Header.css";
 import "../Assets/github.png";
 import "../Assets/linkedin.png";
 
+{/*consider making the background of the navitem a different color when the view is within the range of the section*/}
 function Header() {
 
   const [isVisible, setIsVisible] = useState(false);

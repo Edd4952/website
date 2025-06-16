@@ -18,7 +18,7 @@ import gameMaker from "../Assets/gamemaker.png";
 
 
 function Skills() {
-    const [setExpanded] = useState([]);
+    {/*const [setExpanded] = useState([]);*/}
     const javasdesc = "JavaScript is a versatile programming language used for web development, server-side scripting, and more.";
     const pythonDesc = "Python is a high-level, interpreted programming language known for its readability and versatility. ";
     const javaDesc = "Java is a widely-used object-oriented programming language. It is the first programming language I learned in highschool.";
