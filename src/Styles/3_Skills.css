@@ -2,8 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    height: auto;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
 }
 
 .skills-container {
@@ -11,12 +15,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 0.42vw; /* doubled from 0.42vw */
-    margin: 0.26vw; /* doubled from 0.26vw */
+    gap: 0.42vw; 
+    margin: 0.26vw; 
     width: 33.33%;
-    border: #ccc 0.104vw solid; /* doubled from 0.052vw */
-    border-radius: 0.52vw; /* doubled from 0.26vw */
-    padding: 0.42vw; /* doubled from 0.42vw */
+    border: #ccc 0.104vw solid; 
+    border-radius: 0.52vw; 
+    padding: 0.42vw;
 }
 
 .skill-header {
@@ -25,11 +29,11 @@
     align-items: center;
     justify-content: space-around;
     padding: 0 0.52vw;
-    gap: 0.52vw; /* doubled from 0.26vw */
+    gap: 0.52vw; 
     background-color: #408bf5;
     color: white;
-    height: 2vw; /* 50px ≈ 1.3vw */
-    font-size: 1vw; /* 18px ≈ 0.47vw */
+    height: 2vw; 
+    font-size: 1vw; 
     position: relative;
     border-radius: .3vw;
     cursor: pointer;
@@ -45,10 +49,9 @@
 
 .skill-content {
     background-color: #f9f9f9;
-    font-size: 0.42vw; /* 16px ≈ 0.42vw */
+    font-size: 0.42vw;
     color: #333;
-    justify-content: flex-start;
-    
+    justify-content: flex-start;    
 }
 
 .skill-tooltip {

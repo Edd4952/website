@@ -1,49 +1,50 @@
 .projects-container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    margin: 20px auto;   
-    min-height: 150vh;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1080px;
 }
 .project-box{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 10px;
-    margin: 20px auto;
-    max-width: 1080px;
-    border: 0.104vw solid #ccc; /* doubled from 0.052vw */
+    align-items: center;
+    gap: 20px;
+    border: 0.104vw solid #ccc; 
 }
 .project-overview{
     display: flex;
-    border : 0.104vw solid #ff6464; /* doubled from 0.052vw */
+    border : 0.104vw solid #ff6464; 
     flex-direction: column;
-    justify-content: space-around;
     padding-left: 1vw;
-    gap: 10px;
-    margin: 20px auto;   
+    gap: 50px;
+    margin-left: 0px;
+    margin-right: auto;
+
 }
 .tool-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1vw;
-    border : 0.104vw solid #ff00bf; /* doubled from 0.052vw */
+    gap: 0.5vw;
+    border : 0.104vw solid #ff00bf; 
+    margin-bottom: 20px;
+    margin-right: 1vw;
 }
 .tool{
     display: flex;
     flex-direction: row;
-    border : 0.104vw solid #00ff22; /* doubled from 0.052vw */
     align-items: center;
-    justify-content: space-around;
-    padding: 0 0.52vw;
-    gap: 1vw; 
+    padding: 0 0.52vw; 
     background-color: #408bf5;
     color: white;
     height: 2vw; 
     font-size: 1vw;
+    font-weight: 700;
     position: relative;
     border-radius: .3vw;
 }

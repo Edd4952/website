@@ -31,6 +31,7 @@ function Intro(){
 
     return (
         <div>
+            <section id="1_Header"></section>
             {/*second header*/}
             <header className={`top-header`} style={{zIndex : "5"}}>        
                 <nav className="navwrap">

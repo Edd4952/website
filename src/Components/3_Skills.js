@@ -27,9 +27,9 @@ function Skills() {
     const csharpDesc = "C# is a modern, object-oriented programming language developed by Microsoft. I find that it is closest to java.";
     const vscodeDesc = "This is the most basic and widely used code editor by Microsoft. I used it to make this portfolio";
     const intellijdesc = "IntelliJ IDEA is an integrated development environment (IDE) for Java development. I used it in highschool to work on Java projects.";
-    const unitydesc = "Unity is a cross-platform game engine used for developing video games and simulations. I learned many of the basics including c#.";
+    const unitydesc = "Unity is a cross-platform game engine used for developing video games and simulations. I learned many of the basics including C#.";
     const gameMakerDesc = "GameMaker Studio is a game development platform that allows users to create 2D games using its own scripting language, GML. I used it to make a 2D space shooter game in highschool.";
-    const gmlDesc = "GameMaker Language (GML) is a high-level programming language used in GameMaker Studio for game development. I fidn that its like a mix of Java/C# and python.";
+    const gmlDesc = "GameMaker Language (GML) is a high-level programming language used in GameMaker Studio for game development. I find that its like a mix of Java/C# and python.";
 
     const languages = [
         { id: 1, title: "Javascript", description: javasdesc, image: js },
@@ -88,7 +88,7 @@ function Skills() {
                 {/* computer skills */}
                 <div className="skills-container">
                     {/*title for skill card*/}
-                    <h3 style={{ color: "#85929e ", margin: "0"}}>Computer Science Skills: </h3>
+                    <h3 style={{ color: "#85929e ", margin: "0",}}>Computer Science Skills: </h3>
                     {/*break into next line*/}
                     <div style={{ flexBasis: "100%", height: "0" }}></div>
                     {compsciSkills.map((skill) => (
@@ -107,7 +107,7 @@ function Skills() {
                     <h3 style={{ color: "#85929e ", margin: "0"}}>Soft Skills: </h3>
                     {/*break into next line*/}
                     <div style={{ flexBasis: "100%", height: "0" }}></div>
-
+                    
                     {softSkills.map((softSkill) => (
                         <div key={softSkill.id} className="skill-header">
                             <h3>{softSkill.title}</h3>
@@ -119,7 +119,6 @@ function Skills() {
                     ))}
                 </div>
             </div>
-            
         </div>
     );
 }
