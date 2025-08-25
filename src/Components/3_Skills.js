@@ -73,7 +73,7 @@ function Skills() {
                 {/* prog languages */}
                 <div className="skills-container">
                     {/*title for skill card*/}
-                    <h3 style={{ color: "#85929e ", margin: "0"}}>Programming Languages: </h3>
+                    <h3 style={{ color: "#85929e ", margin: "0"}}>Frameworks/Languages: </h3>
                     {/*break into next line*/}
                     <div style={{ flexBasis: "100%", height: "0"}}></div>
                     
