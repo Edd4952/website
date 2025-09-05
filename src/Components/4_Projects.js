@@ -10,8 +10,7 @@ import aquasched from "../Assets/aquascheduleschedule.png"
 function Projects() {
 
     const portaldesc = "I made this video in about four weeks for an AP physics project. I worked on it almost every day until it was finished, and even then I went back, revised, and improved the content about seven times, making this the eighth and final iteration. It was presented to my class on June 2nd, 2023.";
-    const projects = [
-        {
+    const projects = [{
             id: 1,
             title: "Science Project: Video based on the Portal games",
             description: portaldesc,
@@ -27,7 +26,7 @@ function Projects() {
                 "Elevenlabs",
                 "Audacity"
             ],
-            images: [portalpreview], // replaced image with images[]
+            images: [portalpreview],
             videoEmbedUrl: "https://www.youtube.com/embed/fARW0NJEjhk?si=EGQQozngQ0VJj8qG"
         },
         {
@@ -44,23 +43,33 @@ function Projects() {
                 "GML code",
                 "Sprite Maker"
             ],
-            images: [spacepreview] // add more images here to show multiple previews
+            images: [spacepreview]
         },
         {
             id: 3,
             title: "AquaSchedule",
             description: "A react-expo application for creating and managing two-week schedules for my part-time job at Aquaguard",
             link: (
-                <Link to="#1_Header">
-                    View Project
-                </Link>
+                <div>
+                    <Link to="https://expo.dev/accounts/edd4952/projects/aquaschedule">
+                        Check it out on Expo
+                    </Link>
+                    <br />
+                    <a
+                        href="/AquaSchedulefeatures.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View AquaSchedule Presentation (PDF)
+                    </a>
+                </div>
             ),
             tools: [
                 "React-Expo",
                 "TypeScript",
                 "CSS"
             ],
-            images: [aquaopt, aquasched] 
+            images: [aquaopt, aquasched]
         }
     ];
     
@@ -103,7 +112,8 @@ function Projects() {
                                             style={{
                                                 height: project.id === 3 ? "300px" : "200px",
                                                 width: "auto",
-                                                verticalAlign: "middle"
+                                                verticalAlign: "middle",
+                                                marginRight: "1vw"
                                             }}
                                         />
                                     ))}

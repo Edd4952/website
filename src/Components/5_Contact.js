@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "../Styles/App.css";
+import "../Styles/5_Contact.css";
 
 function Contact() {
     return (
-        <div>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <section id="5_Contact"></section>
             <h1 style={{ paddingLeft: "20px", paddingTop: "90px" }}>Contact me:</h1>
-            <div className="contact-screen">{
-                
-            }
+            <div className="contact-screen">
+                <p>
+                    <a href="mailto:zilbert3dward@gmail.com">zilbert3dward@gmail.com</a>
+                    <text> Call me (847)533-7331</text>
+                </p>
             </div>
         </div>
     );
